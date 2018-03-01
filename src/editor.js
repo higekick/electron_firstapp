@@ -1,4 +1,5 @@
 const fs = require('fs');
+const iconv = require('iconv-lite');
 const {BrowserWindow, dialog} = require('electron').remote;
 
 let inputArea = null;
@@ -52,8 +53,12 @@ function readFile(path) {
         }
         // set file path to footer
         footerArea.innerHTML = path;
+        // UTF-8
+        // var str = text.toString();
+        var buf = new Buffer(text, 'binary');
+        var str = iconv.decode(buf, "Shift_JIS");
         // set text input area
-        editor.setValue(text.toString(), -1);
+        editor.setValue(str, -1);
     });
 }
 

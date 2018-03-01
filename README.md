@@ -10,3 +10,9 @@ $ electron-packager src FirstApp --platform=linux --arch=x64 --overwrite --elect
 
 - to build app for Windows
 replace --platform=linux to win32 in the above command.
+
+- to load text with Shift-JIS
+-- install iconv-lite
+-- https://photo-tea.com/p/nodejs-shift-jis-read/
+$ cd [to under src dir]
+$ npm install iconv-lite --save
