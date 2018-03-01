@@ -16,3 +16,8 @@ replace --platform=linux to win32 in the above command.
 -- https://photo-tea.com/p/nodejs-shift-jis-read/
 $ cd [to under src dir]
 $ npm install iconv-lite --save
+
+- to Read line via stream
+-- install from2-string
+$ cd [to under src dir]
+$ npm install from2-string --save
