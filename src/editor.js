@@ -64,6 +64,12 @@ function readFile(path) {
     });
 }
 
+function refresh() {
+  if (currentPath != "") {
+    readFile(currentPath)
+  }
+}
+
 function saveFile() {
     if (currentPaht == "") {
         saveNewFile();

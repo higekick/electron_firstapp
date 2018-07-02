@@ -1,0 +1,9 @@
+{
+  "name": "FirstApp",
+  "version": "0.1.0",
+  "main": "main.js",
+  "dependencies": {
+    "from2-string": "^1.1.0",
+    "iconv-lite": "^0.4.19"
+  }
+}
